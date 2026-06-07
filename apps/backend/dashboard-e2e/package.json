@@ -1,0 +1,26 @@
+{
+  "name": "@nexer-chat/dashboard-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@nexer-chat/dashboard"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/backend/dashboard-e2e/jest.config.cts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@nexer-chat/dashboard:build",
+          "@nexer-chat/dashboard:serve"
+        ]
+      }
+    }
+  }
+}

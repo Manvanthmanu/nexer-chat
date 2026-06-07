@@ -2,5 +2,27 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/backend/auth-e2e"
+    },
+    {
+      "path": "./apps/backend/auth"
+    },
+    {
+      "path": "./apps/backend/chat-e2e"
+    },
+    {
+      "path": "./apps/backend/chat"
+    },
+    {
+      "path": "./apps/backend/dashboard-e2e"
+    },
+    {
+      "path": "./apps/backend/dashboard"
+    },
+    {
+      "path": "./libs/shared"
+    }
+  ]
 }
